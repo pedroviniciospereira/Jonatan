@@ -1,0 +1,95 @@
+/* styles.css */
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo do formulário */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos do formulário */
+input[type="text"] {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo do botão de adicionar */
+button {
+    padding: 10px 15px;
+    background-color: #28a745; /* Cor do botão Adicionar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Hover para Adicionar */
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #000; /* Faixa de cabeçalho preta */
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo dos botões na tabela */
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:nth-child(1) {
+    background-color: #dc3545; /* Cor para excluir */
+    color: white;
+}
+
+button:nth-child(2) {
+    background-color: #000; /* Cor para desativar (preto) */
+    color: white; /* Texto em branco para contraste */
+}
+
+button:nth-child(1):hover {
+    background-color: #c82333; /* Hover para excluir */
+}
+
+button:nth-child(2):hover {
+    background-color: #333; /* Hover para desativar (um tom mais claro de preto) */
+}
