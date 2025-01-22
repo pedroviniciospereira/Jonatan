@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de WhatsApp</h1>
+        <form id="whatsappForm">
+            <div class="form-group">
+                <input type="tel" id="phoneNumber" 
+                    pattern="[0-9]{11,}"
+                    placeholder="Número de telefone (apenas números)" 
+                    title="Digite apenas números, mínimo 11 dígitos"
+                    required>
+                <input type="text" id="operator" placeholder="Nome do Operador" required>
+                <input type="text" id="message" placeholder="Mensagem personalizada">
+                <button type="submit" class="btn-primary">Adicionar Número</button>
+            </div>
+        </form>
+        
+        <div class="fallback-section">
+            <label for="fallbackUrl">URL de Redirecionamento Alternativa:</label>
+            <input type="url" id="fallbackUrl" placeholder="https://exemplo.com">
+            <div id="urlStatus" class="status-message"></div>
+        </div>
+
+        <div class="redirect-button">
+            <a href="redirect.html" target="_blank" class="btn-redirect">Ir para Redirecionamento</a>
+        </div>
+
+        <div class="table-container">
+            <table id="numbersTable">
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Operador</th>
+                        <th>Tipo</th>
+                        <th>Link Original</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="numbersContainer"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
